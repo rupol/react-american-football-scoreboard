@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
+import Timer from "./Timer";
 
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
@@ -33,7 +34,7 @@ function App() {
 
             <div className="home__score">{homePoints}</div>
           </div>
-          <div className="timer">00:03</div>
+          <Timer />
           <div className="away">
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{awayPoints}</div>
